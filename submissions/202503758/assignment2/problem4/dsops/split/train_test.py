@@ -1,7 +1,7 @@
 import random
 
 def train_test_split(seq: list, test_ratio: float, seed: int | None = None) -> tuple[list, list]:
-    if not (0.0 <= test_ratio <= 1.0): raise(ValueError)
+    if not (0.0 <= test_ratio <= 1.0): raise ValueError()
     if not seq: return [], []
     
     copy = seq.copy()
