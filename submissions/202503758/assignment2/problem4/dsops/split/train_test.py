@@ -6,7 +6,7 @@ def train_test_split(seq: list, test_ratio: float, seed: int | None = None) -> t
     
     copy = seq.copy()
     if seed is not None:
-        seed = random.seed(seed)
+        random.seed(seed)
     random.shuffle(copy)
 
     idx = int(round(len(seq) * (1 - test_ratio)));
