@@ -1,4 +1,6 @@
-from collections import Counter
-
 def label_distribution(labels: list[str]) -> dict[str, int]:
-    return dict(Counter(labels))
+    result = {}
+    for label in labels:
+        result[label] = result.get(label, 0) + 1
+    
+    return result
