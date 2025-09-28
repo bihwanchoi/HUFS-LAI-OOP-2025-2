@@ -23,7 +23,7 @@ def clean_text(s: str) -> str:
     result = ""
     for char in s:
         if (char not in remove):
-            result += char;
+            result += char
     
     return result;
 
